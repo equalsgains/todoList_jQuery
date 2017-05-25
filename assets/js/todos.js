@@ -16,8 +16,9 @@ $("input[type='text']").keypress(function (e) {
         // grabbing new todo text from input
         var todoText = $(this).val();
         $(this).val("");
+        // var num = $('li').length + 1;
         // create a new li and add to ul
-        $("ul").append("<li><span><i class='fa fa-trash'> </i></span> " + todoText + "</li>");
+        $("ul").append("<li><span><i class='fa fa-trash'> </i></span>" + todoText + "</li>");
     } else if (e.which === 13 && $(this).val() === "") {
         alert("type something first");
     }
